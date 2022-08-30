@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap');
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+body{
+    transition: 2s;
+    background-color: lightslategray;
+    color: #1e1e1e;
+}
+
+*{
+    font-family: "Qwitcher Grypen", cursive;
+    font-size: 60px;   
+}
+
+h1{
+    font-size: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.results{
+    height: 500px;
+    width: 500px;
+    background-color: black;
+    color: white;
+}
+
+.gameplay{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.card{
+    transition: 2s;
+    border-radius: 25px;
+    height: 250px;
+    background-color: indianred;
+}
+
+.card.animation{
+    transition: 0.5s;
+    animation-play-state: paused;
+}
+
+.card.animation:hover{
+    background-color: cornflowerblue;
+    animation: 2s linear 0.07s infinite normal forwards running glide;
+}
+
+@keyframes glide{
+    0%{
+        transform: translateY(0%);
+    }
+    12%{
+        transform: translateY(-10%);
+    }
+    25%{
+        transform: translateY(-20%);
+    }
+    37%{
+        transform: translateY(-10%);
+    }
+    50%{
+        transform: translateY(0%);
+    }
+    62%{
+        transform: translateY(10%);
+    }
+    75%{
+        transform: translateY(20%);
+    }
+    87%{
+        transform: translateY(10%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+figcaption{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.scores{
+    position: fixed;
+}
+
+.scores.player{
+    color: cornflowerblue;
+}
+
+.scores.computer{
+    color: lavenderblush;
+    bottom: 20px;
+}

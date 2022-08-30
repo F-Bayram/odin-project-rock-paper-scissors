@@ -4,10 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Rock Paper Scissors - Odin</title>
 </head>
 <body>
-    
+    <section class="headline">
+        <h1>Rock Paper Scissors</h1>
+    </section>
+    <section class="gameplay">
+        <div class="rock">    
+            <figure>
+                <button class="rps card animation" data-selection="rock"><img src="pics/rock.png" alt=""></button>
+                <figcaption>Rock</figcaption>
+            </figure>
+        </div>
+        <div class="paper">
+            <figure>
+                <button class="rps card animation" data-selection="paper"><img src="pics/paper.png" alt=""></button>
+                <figcaption>Paper</figcaption>
+            </figure>
+        </div>
+        <div class="scissors">
+            <figure>
+                <button class="rps card animation" data-selection="scissors"><img src="pics/scissors.png" alt=""></button>
+                <figcaption>Scissors</figcaption>
+            </figure>
+        </div>
+    </section>
+    <section class="scores">
+        <div class="scores player">
+            <p>Player: 0</p>
+        </div>
+        <div class="scores computer">
+            <p>Computer: 0</p>
+        </div>
+    </section>
 </body>
 </html>
